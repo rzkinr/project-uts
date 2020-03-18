@@ -8,11 +8,6 @@ use App\product;
 class ProductController extends Controller
 {
 
-    public function home()
-    {
-        return view('backend.index');
-    }
-
     /**
      * Display a listing of the resource.
      *

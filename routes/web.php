@@ -21,9 +21,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::post('/login', 'HomeController@login')->name('login.login');
-Route::get('/login', 'HomeController@logout')->name('login.keluar');
+// Route::get('/login', 'HomeController@logout')->name('login.keluar');
 
-Route::get('/backend', 'ProductController@home')->name('admin.home');
+Route::get('/backend', 'IndexController@home')->name('admin.home');
 
 Route::get('/backend/products', 'ProductController@index')->name('products.index');
 Route::get('/backend/products/create', 'ProductController@create')->name('products.create');
